@@ -12,6 +12,8 @@ Com o __BotObjectTracking__ você verifica aonde sua encomenda está, de maneira
 
 Nunca foi tão fácil rastrear a sua encomenda! Após ter inicado o bot (/start), utilize o comando __/track__ seguido do código da sua encomenda, e pronto! Você receberá uma mensagem com as informações do seu produto.
 
+Caso tenha dúvida sobre os comandos disponíveis, utilize o comando /help.
+
 __Observação__: É possível verificar mais de uma encomenda ao mesmo tempo, basta informar os códigos juntos
 
 ### __Exemplos__
