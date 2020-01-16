@@ -71,7 +71,7 @@ def help(bot, update):
     """
     try:
         logger.info("Chamando o método 'help'")
-        msg = '/start - Inicia o bot\n /stop - Finaliza o bot \n /track - Mostra o estado da encomenda (É informar o código do objeto na frente do comando Ex: /track BR1235) \n /help - Mostra os comandos disponíveis'
+        msg = '/start - Inicia o bot\n /stop - Finaliza o bot \n /track - Mostra o estado da encomenda (É necessário informar o código do objeto na frente do comando Ex: /track BR1235) \n /help - Mostra os comandos disponíveis'
         
         # Envia a mensagem para o usuário
         bot.send_message(chat_id=update.message.chat_id, text=msg)
