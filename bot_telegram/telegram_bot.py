@@ -5,15 +5,14 @@ from rastreamento.tracking import Tracking
 
 import logging, time
 
-#Bot Token
+# Bot Token
 BOT_TOKEN = '1001294837:AAGpxUAUJfosdvklkN9ZszYCM_lTADsh9TM'
-
 updater = Updater(token=BOT_TOKEN)
 
-#Cria os handle's (comandos)
+# Cria os handle's (comandos)
 dispatcher = updater.dispatcher
 
-#Enable logging
+# Definindo o log
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -23,7 +22,7 @@ def start(bot, update):
     """
     try:
         logger.info("Chamando o método 'start'")
-        msg = f"Olá, Eu sou o {bot.name}. Informe o código do objeto que você deseja rastrear"
+        msg = f"Olá, Eu sou o {bot.name}. \n\n Informe o código do objeto que você deseja rastrear atráves do comando '/track codigo' \n\n Caso tenha dúvida sobre os comandos disponíveis, utilize o comando /help"
         
         # Envia a mensagem para o usuário
         bot.send_message(chat_id=update.message.chat_id, text=msg)
@@ -41,14 +40,18 @@ def track(bot, update, args):
         for code in args:
             object_tracking = Tracking()
             places = object_tracking.track(code)
-            order = ''
+            order = f'HISTÓRICO DO OBJETO {code} \n ========================================== \n '
 
             # Concatena as atualiações feitas na encomenda para enviar somente uma mensagem
-            for place in places:
-                order = f'{order} \n {place} \n ==========================='
+            if places:
+                for place in places:
+                    order = f'{order} \n {place} \n ------------------------------------------'
+            else:
+                order = f'{order} \n Objeto não encontrado'
 
             # Envia a mensagem para o usuário
             bot.send_message(chat_id=update.message.chat_id, text=order)
+                
     except Exception as ex:
         error(bot, update, ex)
     
