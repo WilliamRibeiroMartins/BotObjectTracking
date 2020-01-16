@@ -1,6 +1,6 @@
 # Bot de rastreamento de encomendas
 
-## __Para que serve__
+### __Para que serve__
 
 Está cansado de ter que ficar entrando no site dos correios para verificar aonde está a sua encomenda?
 
