@@ -51,7 +51,6 @@ def track(bot, update, args):
 
             # Envia a mensagem para o usuário
             bot.send_message(chat_id=update.message.chat_id, text=order)
-                
     except Exception as ex:
         error(bot, update, ex)
     
