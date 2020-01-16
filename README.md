@@ -8,18 +8,18 @@ Então aqui está a solução para o seu problema...
 
 Com o __BotObjectTracking__ você verifica aonde sua encomenda está, de maneira fácil e rápida!
 
-## __Como utilizar__
+### __Como utilizar__
 
 Nunca foi tão fácil rastrear a sua encomenda! Após ter inicado o bot (/start), utilize o comando __/track__ seguido do código da sua encomenda, e pronto! Você receberá uma mensagem com as informações do seu produto.
 
 __Exemplo__: /track PX000000000BR
 
-## __Atualizações futuras__
+### __Atualizações futuras__
 - ~~Verificar mais de uma encomenda ao mesmo tempo~~
 - Receber msg automaticamente, sempre que a encomenda tiver uma atualização
 - Cadastrar encomenda
 - Listar todas as encomendas cadastradas
 
-## __Referencias__
+### __Referencias__
 
 - [Biblioteca do telegram](https://github.com/python-telegram-bot/python-telegram-bot)
