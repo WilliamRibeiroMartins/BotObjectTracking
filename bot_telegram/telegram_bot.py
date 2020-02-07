@@ -105,5 +105,9 @@ dispatcher.add_handler(track_handle)
 help_handle = CommandHandler('help', help)
 dispatcher.add_handler(help_handle)
 
-#Inicia o bot
-updater.start_polling()
+def start_bot():
+    """
+    Inicia o bot
+    """
+    updater.start_polling()
+
