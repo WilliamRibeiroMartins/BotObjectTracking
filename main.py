@@ -1,10 +1,15 @@
-import bot_telegram.telegram_bot
 import time
+
+from bot_telegram import telegram_bot
+from flask_app.app import flask_site
 
 #Mantem o programa sendo executado
 print("Iniciando o bot...")
 print("Bot iniciado")
 
-while(False != True):
-    time.sleep(5)
+# Iniciando o bot
+telegram_bot.start_bot()
+
+# Iniciando o flask
+flask_site.app.run()
 

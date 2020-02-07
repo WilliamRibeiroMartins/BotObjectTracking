@@ -24,9 +24,10 @@ __Observação__: É possível verificar mais de uma encomenda ao mesmo tempo, b
 
 ### __Atualizações futuras__
 - ~~Verificar mais de uma encomenda ao mesmo tempo~~
-- Receber msg automaticamente, sempre que a encomenda tiver uma atualização
 - Cadastrar encomenda
+- Receber msg automaticamente, sempre que a encomenda tiver uma atualização
 - Listar todas as encomendas cadastradas
+- Melhorar o visual do site no flask
 
 ### __Referencias__
 
