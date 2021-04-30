@@ -3,5 +3,5 @@ chardet==3.0.4
 pylint==2.3.1
 python-telegram-bot==12.3.0
 requests==2.22.0
-urllib3==1.25.7
+urllib3==1.25.8
 virtualenv==16.6.1
